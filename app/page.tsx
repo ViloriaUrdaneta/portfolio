@@ -1,40 +1,54 @@
 import Image from 'next/image'
+import signature from '../public/whitesignature.png'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-8 bg-black">
-      <div className="container-flex mx-auto bg-white flex flex-wrap">
-        <div className=" h-32 max-w-6xl p-4 border-4 border-black w-2/3">
-          <h1 className='text-6xl my-4 ml-4'>Miguel Viloria</h1>
+    <main className="flex min-h-screen flex-col items-center justify-between p-4 bg-black h-screen">
+      <div className="w-full bg-white h-full flex font-mono">
+        <div className="h-full w-1/12 border-r-4 border-black">
+          <div className="h-2/4 border-b-4 border-black bg-gradient-to-br from-black to-indigo-500" >
+            
+          </div>
+          <div className="h-2/4 border-black">
+            
+          </div>
         </div>
-        <div className=" h-32 max-w-lg p-4 border-4 border-black w-1/3">
-          <p className='text-xl my-8 font-semibold ml-4 text-center'>miguel.viloria.247@gmail.com</p>
-        </div>
-        <div className="flex">
-          <div className='w-2/3'>
-            <div className=" h-96 border-4 border-black">
-              <h2 className='text-5xl my-8  ml-4 '>Desarrollador web y editor de video</h2>
+        <div className="h-full w-6/12 border-r-4 border-black">
+          <div className="h-2/4 border-b-4 border-black">
+            <div className="h-1/4 border-b-4 border-black flex items-center hover:bg-black hover:text-slate-100">
+              <h1 className='text-4xl ml-10 font-semibold'>Miguel Viloria</h1>
+              <Image  src={signature} alt="signature" width={100} height={100} className='ml-24' />
             </div>
-            <div className=" h-32 p-4 border-4 border-black">
-              <h2 className='text-xl my-8  ml-4 '>Desarrollo FullStack</h2>
-            </div>
-            <div className=" h-32 p-4 border-4 border-black ">
-              <h2 className='text-xl my-8  ml-4 '>Edición y producción de video</h2>
-            </div>
-            <div className=" h-32 p-4 border-4 border-black">
-              <h2 className='text-xl my-8  ml-4 '>Pintura</h2>
+            <div className="h-3/4 border-black hover:bg-black hover:text-slate-100">
+              <h2 className='text-5xl ml-10 py-8 ml-4 '>Desarrollador web</h2>
+              <p className='text-white'>holi</p>
             </div>
           </div>
-          <div className=" h-96  border-4 border-black w-1/3 h-screen">
-            <h2 className='text-5xl my-8  '>Desarrollador web y editor de video</h2>
+          <div className="h-2/4 border-black">
+            <div className="h-1/4 border-b-4 border-black flex items-center hover:bg-black hover:text-slate-100">
+              <h2 className='text-xl ml-10 font-semibold'>Desarrollo FullStack</h2>
+            </div>
+            <div className="h-1/4 border-b-4 border-black flex items-center hover:bg-black hover:text-slate-100">
+              <h2 className='text-xl ml-10 font-semibold'>Blog</h2>
+            </div>
+            <div className="h-1/4 border-b-4 border-black flex items-center hover:bg-black hover:text-slate-100">
+              <h2 className='text-xl ml-10 font-semibold'>Edición y producción de video</h2>
+            </div>
+            <div className="h-1/4 border-black flex items-center hover:bg-black hover:text-slate-100">
+              <h2 className='text-xl ml-10 font-semibold'>Pintura</h2>
+            </div>
           </div>
-        
+        </div>
+        <div className="h-full w-5/12">
+          <div className="h-1/8 border-b-4 border-black flex items-center hover:bg-black hover:text-slate-100">
+            <p className='text-xl ml-10 font-semibold'>miguel.viloria.247@gmail.com</p>
+          </div>
+          <div className=" h-7/8 border-black bg-gradient-to-br from-sky-500 to-black">
+            
+          </div>
         </div>
         
-        
-      </div>
-      <h3></h3>
-      
+      </div>      
     </main>
   )
 }
@@ -43,6 +57,9 @@ export default function Home() {
 
 
 /**
+ * <Image  src="/fondo.png" alt="Background" width={700} height='100' className='object-cover' />
+ *  <Image  src="/fondoCruzDiez.png" alt="Background" width={700} height='100' className='object-cover h-1/2' />
+ * 
  * 
  * <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
@@ -151,3 +168,39 @@ export default function Home() {
       </div>
  * 
  */
+
+
+
+      /**
+       * 
+       * 
+       * 
+       * <div className="flex">
+          <div className=" h-32 p-4 border-2 border-black w-2/3">
+            <h1 className='text-6xl my-4 ml-4'>Miguel Viloria</h1>
+          </div>
+          <div className=" h-32 p-4 border-2 border-black w-1/3">
+            <p className='text-xl my-8 font-semibold ml-4 text-center'>miguel.viloria.247@gmail.com</p>
+          </div>
+        </div>
+        <div className="flex h-1/4">
+          <div className='w-2/3'>
+            <div className=" h-96 border-2 border-black">
+              <h2 className='text-5xl my-8  ml-4 '>Desarrollador web y editor de video</h2>
+            </div>
+            <div className=" h-32 p-2 border-2 border-black">
+              <h2 className='text-xl my-9  ml-4 '>Desarrollo FullStack</h2>
+            </div>
+            <div className=" h-32 p-2 border-2 border-black ">
+              <h2 className='text-xl my-8  ml-4 '>Edición y producción de video</h2>
+            </div>
+            <div className=" h-32 p-2 border-2 border-black">
+              <h2 className='text-xl my-8  ml-4 '>Pintura</h2>
+            </div>
+          </div>
+          <div className='w-1/3 h-full'>
+            
+          </div>
+        </div>
+       * 
+       */
