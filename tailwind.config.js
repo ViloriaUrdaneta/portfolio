@@ -14,7 +14,10 @@ module.exports = {
       height: {
         '1/8': '12.4%',
         '7/8': '87.6%',
-      }
+      },
+      spacing: {
+        'indent': '20px', // Define el valor de la sangría
+      },
     },
   },
   plugins: [],
