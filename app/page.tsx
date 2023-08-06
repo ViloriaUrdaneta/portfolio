@@ -1,5 +1,19 @@
 import Image from 'next/image'
 import signature from '../public/whitesignature.png'
+import profile from '../public/profilepic.png'
+import jsIcon from '../public/icons/javascript.png'
+import tsIcon from '../public/icons/typescript.png'
+import reactIcon from '../public/icons/react.png'
+import nodeIcon from '../public/icons/node.png'
+import nextIcon from '../public/icons/next.png'
+import expressIcon from '../public/icons/express.png'
+import tailwindIcon from '../public/icons/tailwind.png'
+import sequelizeIcon from '../public/icons/sequelize.png'
+import posgresqlIcon from '../public/icons/posgresql.png'
+import htmlIcon from '../public/icons/html.png'
+import cssIcon from '../public/icons/css.png'
+import mongoIcon from '../public/icons/mongo.png'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -17,17 +31,21 @@ export default function Home() {
           <div className="h-2/4 border-b-4 border-black">
             <div className="h-1/4 border-b-4 border-black flex items-center hover:bg-black hover:text-slate-100">
               <h1 className='text-4xl ml-10 font-semibold'>Miguel Viloria</h1>
-              <Image  src={signature} alt="signature" width={100} height={100} className='ml-24' />
+              <Image  src={profile} alt="profile" width={140} height={140} className='ml-12 flex flex-nowrap' />
             </div>
             <div className="h-3/4 border-black hover:bg-black hover:text-slate-100">
-              <h2 className='text-5xl ml-10 py-8 ml-4 '>Desarrollador web</h2>
-              <p className='text-white'>holi</p>
+              <h2 className='text-5xl ml-10 pt-5 font-semibold'>Desarrollador web</h2>
+              <p className='text-xl mx-10 font-sans pt-2'>Creo en los beneficios del aprendizaje continuo y en la necesidad de usar las herramientas tecnológias para hacer nuestra vida mejor.<br/>
+              Me gusta entender como se guarda, estructura y maneja la información y me gusta proponer diseños estéticos innovadores para mostrarla.</p>
+              <p className='text-xl mx-10 font-sans pt-2 text-white'>También soy editor de video y me gusta pintar</p>
             </div>
           </div>
           <div className="h-2/4 border-black">
-            <div className="h-1/4 border-b-4 border-black flex items-center hover:bg-black hover:text-slate-100">
-              <h2 className='text-xl ml-10 font-semibold'>Desarrollo FullStack</h2>
-            </div>
+            <Link href={'/webs'}>
+              <div className="h-1/4 border-b-4 border-black flex items-center hover:bg-black hover:text-slate-100">
+                <h2 className='text-xl ml-10 font-semibold'>Desarrollo FullStack</h2>
+              </div>
+            </Link>
             <div className="h-1/4 border-b-4 border-black flex items-center hover:bg-black hover:text-slate-100">
               <h2 className='text-xl ml-10 font-semibold'>Blog</h2>
             </div>
@@ -43,8 +61,62 @@ export default function Home() {
           <div className="h-1/8 border-b-4 border-black flex items-center hover:bg-black hover:text-slate-100">
             <p className='text-xl ml-10 font-semibold'>miguel.viloria.247@gmail.com</p>
           </div>
-          <div className=" h-7/8 border-black bg-gradient-to-br from-sky-500 to-black">
-            
+          <div className=" h-7/8 border-black bg-gradient-to-br from-slate-200 via-gray-200 to-stone-200 ">
+            <div className='ml-10 mr-10'>
+              <h2 className='text-5xl  text-center pt-8 font-light'>Stack tecnológico</h2>
+              <div className='grid grid-cols-4 mx-aut pt-10'>
+                <div className='p-3 grid justify-items-center'>
+                  <Image  src={jsIcon} alt="javascript" width={70} height={70} className='text-center' />
+                  <p className='mt-2 font-bold text-xl '>JavaScript</p>
+                </div>
+                <div className='p-3 grid justify-items-center'>
+                  <Image  src={tsIcon} alt="typescript" width={70} height={70} />
+                  <p className='mt-2 font-bold text-xl'>TypeScript</p>
+                </div>
+                <div className='p-3 grid justify-items-center'>
+                <Image  src={reactIcon} alt="react" width={70} height={70} />
+                  <p className='mt-2 font-bold text-xl'>React JS</p>
+                </div>
+                <div className='p-3 grid justify-items-center'>
+                <Image  src={nodeIcon} alt="nodejs" width={70} height={70} />
+                  <p className='mt-2 font-bold text-xl'>Node JS</p>
+                </div>
+                <div className='p-3 grid justify-items-center'>
+                  <Image  src={nextIcon} alt="nextjs" width={70} height={70}/>
+                  <p className='mt-2 font-bold text-xl'>Next JS</p>
+                </div>
+                <div className='p-3 grid justify-items-center'>
+                <Image  src={expressIcon} alt="express" width={70} height={70}  />
+                  <p className='mt-2 font-bold text-xl'>Express</p>
+                </div>
+                <div className='p-3 grid justify-items-center'>
+                  <Image  src={tailwindIcon} alt="tailwind" width={70} height={70}/>
+                  <p className='mt-2 font-bold text-xl'>Tailwind</p>
+                </div>
+                <div className='p-3 grid justify-items-center'>
+                  <Image  src={sequelizeIcon} alt="signature" width={70} height={70} />
+                  <p className='mt-2 font-bold text-xl'>Sequelize</p>
+                </div>
+                <div className='p-3 grid justify-items-center'>
+                  <Image  src={posgresqlIcon} alt="postgresql" width={70} height={70} />
+                  <p className='mt-1 font-bold text-xl'>PostgreSQL</p>
+                </div>
+                <div className='p-3 grid justify-items-center'>
+                  <Image  src={mongoIcon} alt="mongoDB" width={70} height={70}/>
+                  <p className='mt-2 font-bold text-xl'>Mongo DB</p>
+                </div>
+                <div className='p-3 grid justify-items-center'>
+                  <Image  src={htmlIcon} alt="html" width={70} height={70} />
+                  <p className='mt-2 font-bold text-xl'>HTML</p>
+                </div>
+                <div className='p-3 grid justify-items-center'>
+                  <Image  src={cssIcon} alt="css" width={70} height={70} />
+                  <p className='mt-2 font-bold text-xl'>CSS</p>
+                </div>
+              </div>
+              
+              
+            </div>
           </div>
         </div>
         
