@@ -34,7 +34,6 @@ export default function Home() {
 
   const arrow = '=>'
 
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-4 bg-black h-screen">
       <div className="w-full bg-white h-full flex font-mono">
@@ -123,12 +122,20 @@ export default function Home() {
                   <p className='mt-2 font-bold text-xl'>Next JS</p>
                 </div>
                 <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                <Image  src={expressIcon} alt="express" width={70} height={70}  />
-                  <p className='mt-2 font-bold text-xl'>Express</p>
-                </div>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
                   <Image  src={tailwindIcon} alt="tailwind" width={70} height={70}/>
                   <p className='mt-2 font-bold text-xl'>Tailwind</p>
+                </div>
+                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
+                  <Image  src={htmlIcon} alt="html" width={70} height={70} />
+                  <p className='mt-2 font-bold text-xl'>HTML</p>
+                </div>
+                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
+                  <Image  src={cssIcon} alt="css" width={70} height={70} />
+                  <p className='mt-2 font-bold text-xl'>CSS</p>
+                </div>
+                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
+                  <Image  src={expressIcon} alt="express" width={70} height={70}  />
+                  <p className='mt-2 font-bold text-xl'>Express</p>
                 </div>
                 <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
                   <Image  src={sequelizeIcon} alt="signature" width={70} height={70} />
@@ -142,14 +149,7 @@ export default function Home() {
                   <Image  src={mongoIcon} alt="mongoDB" width={70} height={70}/>
                   <p className='mt-2 font-bold text-xl'>Mongo DB</p>
                 </div>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={htmlIcon} alt="html" width={70} height={70} />
-                  <p className='mt-2 font-bold text-xl'>HTML</p>
-                </div>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={cssIcon} alt="css" width={70} height={70} />
-                  <p className='mt-2 font-bold text-xl'>CSS</p>
-                </div>
+                
               </div>
               
               

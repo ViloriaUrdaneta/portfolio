@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "DEVsafío",
+        "description": "Proyecto  DLAB-Desafio Latam. El proyecto consiste en una plataforma online orientada al uso de búsqueda de empleo y reclutamiento del rubro TI. Partiendo del perfil de cada usuario, test técnicos, encuestas, exhibiciones de código y material de apoyo. La web pretende poner en contacto a miles de postulantes y empresas. Principalmente se busca replicar, en primera instancia, la apariencia de la Landing Page de Devsafio desde el Figma compartido, en lo sucesivo se agregarán las distintas pantallas con la funcionalidad.",
+        "picture": "/webs/devsafio.png",
+        "techStack": "JavaScript, NodeJS, ReactJS, Tailwind CSS, PostgreSQL, Sequelize",
+        "webLink": "https://devsafio-77620.web.app/",
+        "repoLink": "https://github.com/dlab-team/c6-frontend",
+        "repoLink2": "https://github.com/dlab-team/c6-backend"
+    },
+    {
+        "id": 2,
+        "title": "Nova - JorgeGas",
+        "description": "Aplicación web para gestión interna de empresa distribuidora de gas doméstico sucursal de Abastible",
+        "picture": "/webs/nova.png",
+        "techStack": "JavaScript, NodeJS, ReactJS, Redux, Bootstrap, PostgreSQL, Sequelize, Puppeteer",
+        "webLink": "https://nova.jorgegas.cl/"
+    }
+]
