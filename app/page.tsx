@@ -4,18 +4,6 @@ import Link from 'next/link'
 import copyIcon from '../public/copy.png'
 import Image from 'next/image'
 import profile from '../public/profilepic.png'
-import jsIcon from '../public/icons/javascript.png'
-import tsIcon from '../public/icons/typescript.png'
-import reactIcon from '../public/icons/react.png'
-import nodeIcon from '../public/icons/node.png'
-import nextIcon from '../public/icons/next.png'
-import expressIcon from '../public/icons/express.png'
-import tailwindIcon from '../public/icons/tailwind.png'
-import sequelizeIcon from '../public/icons/sequelize.png'
-import posgresqlIcon from '../public/icons/posgresql.png'
-import htmlIcon from '../public/icons/html.png'
-import cssIcon from '../public/icons/css.png'
-import mongoIcon from '../public/icons/mongo.png'
 import githubIcon from '../public/GitHub-logo.png'
 
 
@@ -43,7 +31,7 @@ export default function Home() {
           </div>
           <div className="h-2/4 border-black flex items-end">
             <a href="https://github.com/ViloriaUrdaneta" target="_blank" rel="noopener noreferrer" className='mx-auto'>
-              <Image  src={githubIcon} alt="profile" width={100} height={100} className=' flex flex-nowrap mx-auto mb-12' />
+              <Image  src={githubIcon} alt="github" width={100} height={100} className=' flex flex-nowrap mx-auto mb-5' />
             </a>
           </div>
         </div>
@@ -97,63 +85,8 @@ export default function Home() {
               <p className='font-extrabold text-lg text-black'>{copied ? 'Copied!' : 'Copy'}</p>
             </button>
           </div>
-          <div className=" h-7/8 border-black bg-gradient-to-br from-slate-200 via-gray-200 to-stone-200">
-            <div className='ml-10 mr-10'>
-              <h2 className='text-2xl  text-center pt-8 font-light opacity-70'>Stack tecnológico</h2>
-              <div className='grid grid-cols-4 mx-aut pt-10 text-base'>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={jsIcon} alt="javascript" width={40} height={40} className='text-center' />
-                  <p className='mt-2 font-bold '>JavaScript</p>
-                </div>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={tsIcon} alt="typescript" width={40} height={40} />
-                  <p className='mt-2 font-bold'>TypeScript</p>
-                </div>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                <Image  src={reactIcon} alt="react" width={40} height={40} />
-                  <p className='mt-2 font-bold'>React JS</p>
-                </div>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                <Image  src={nodeIcon} alt="nodejs" width={40} height={40} />
-                  <p className='mt-2 font-bold'>Node JS</p>
-                </div>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={nextIcon} alt="nextjs" width={40} height={40}/>
-                  <p className='mt-2 font-bold'>Next JS</p>
-                </div>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={tailwindIcon} alt="tailwind" width={40} height={40}/>
-                  <p className='mt-2 font-bold '>Tailwind</p>
-                </div>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={htmlIcon} alt="html" width={40} height={40} />
-                  <p className='mt-2 font-bold text-xl'>HTML</p>
-                </div>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={cssIcon} alt="css" width={40} height={40} />
-                  <p className='mt-2 font-bold'>CSS</p>
-                </div>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={expressIcon} alt="express" width={40} height={40}  />
-                  <p className='mt-2 font-bold'>Express</p>
-                </div>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={sequelizeIcon} alt="signature" width={40} height={40} />
-                  <p className='mt-2 font-bold'>Sequelize</p>
-                </div>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={posgresqlIcon} alt="postgresql" width={40} height={40} />
-                  <p className='mt-1 font-bold'>PostgreSQL</p>
-                </div>
-                <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={mongoIcon} alt="mongoDB" width={40} height={40}/>
-                  <p className='mt-2 font-bold '>Mongo DB</p>
-                </div>
-                
-              </div>
-              
-              
-            </div>
+          <div className=" h-7/8 border-black bg-gradient-to-br from-cyan-400  to-black">
+         
           </div>
         </div>
         
