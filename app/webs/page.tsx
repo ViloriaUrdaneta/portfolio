@@ -24,7 +24,7 @@ function Webs() {
     <div className='flex min-h-screen flex-col items-center p-4 bg-gray-800 text-white h-full font-mono'>
         <h1 className='text-2xl py-16'>Proyectos de desarrollo</h1>
         <div className=''>
-              <h2 className='text-2xl  text-center pt-8 font-light opacity-70'>Stack tecnológico</h2>
+              <h2 className='text-2xl  text-center pt-8 font-white'>Stack tecnológico</h2>
               <div className='grid grid-cols-6 mx-aut pt-10 text-base'>
                 <div className='p-3 grid justify-items-center '>
                   <Image  src={jsIcon} alt="javascript" width={50} height={50} className='text-center' />
