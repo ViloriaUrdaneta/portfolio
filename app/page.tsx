@@ -43,23 +43,23 @@ export default function Home() {
           </div>
           <div className="h-2/4 border-black flex items-end">
             <a href="https://github.com/ViloriaUrdaneta" target="_blank" rel="noopener noreferrer" className='mx-auto'>
-              <Image  src={githubIcon} alt="profile" width={140} height={140} className=' flex flex-nowrap mx-auto mb-12' />
+              <Image  src={githubIcon} alt="profile" width={100} height={100} className=' flex flex-nowrap mx-auto mb-12' />
             </a>
           </div>
         </div>
         <div className="h-full w-6/12 border-r-4 border-black">
           <div className="h-2/4 border-b-4 border-black">
             <div className="h-1/4 border-b-4 border-black flex items-center hover:bg-black hover:text-slate-100 justify-between">
-              <h1 className='text-4xl ml-10 font-semibold'>Miguel Viloria</h1>
-              <Image  src={profile} alt="profile" width={140} height={140} className=' flex flex-nowrap me-8' />
+              <h1 className='text-xl ml-10 font-semibold'>Miguel Viloria</h1>
+              <Image  src={profile} alt="profile" width={70} height={70} className=' flex flex-nowrap me-8' />
             </div>
             <div className="h-3/4 border-black hover:bg-black hover:text-slate-100">
-              <h2 className='text-5xl ml-10 pt-5 font-semibold'>Desarrollador web</h2>
-              <p className='text-xl mx-10 font-sans pt-2 first-line:pl-indent'>
+              <h2 className='text-2xl ml-10 pt-5 font-semibold'>Desarrollador web</h2>
+              <p className='text-base mx-10 font-sans pt-2 first-line:pl-indent'>
                 Me gusta entender como se guarda, estructura y maneja la información y me gusta proponer diseños estéticos innovadores para mostrarla.
                 <br/>Creo en los beneficios del aprendizaje continuo y en la necesidad de usar las herramientas tecnológias para mejorar nuestras vidas.
               </p>
-              <p className='text-xl mx-10 font-sans pt-2 text-white'>También soy editor de video y me gusta pintar.</p>
+              <p className='text-base mx-10 font-sans pt-2 text-white'>También soy editor de video y me gusta pintar.</p>
             </div>
           </div>
           <div className="h-2/4 border-black">
@@ -91,63 +91,63 @@ export default function Home() {
         </div>
         <div className="h-full w-5/12">
           <div className="h-1/8 border-b-4 border-black flex items-center bg-black text-slate-100 hover:bg-white hover:text-slate-900">
-            <p className='text-2xl ml-10 font-semibold ' id='mail'>miguel.viloria.247@gmail.com</p>
-            <button onClick={() => copyToClipboard('miguel.viloria.247@gmail.com')} className='ml-16'>
-              <Image  src={copyIcon} alt="javascript" width={40} height={40} className='text-center' />
-              <p className='font-extrabold text-black'>{copied ? 'Copied!' : 'Copy'}</p>
+            <p className='text-lg ml-10 ' id='mail'>miguel.viloria.247@gmail.com</p>
+            <button onClick={() => copyToClipboard('miguel.viloria.247@gmail.com')} className='ml-10 flex items-center  text-center'>
+              <Image  src={copyIcon} alt="javascript" width={20} height={20} className='text-center' />
+              <p className='font-extrabold text-lg text-black'>{copied ? 'Copied!' : 'Copy'}</p>
             </button>
           </div>
           <div className=" h-7/8 border-black bg-gradient-to-br from-slate-200 via-gray-200 to-stone-200">
             <div className='ml-10 mr-10'>
-              <h2 className='text-5xl  text-center pt-8 font-light opacity-70'>Stack tecnológico</h2>
-              <div className='grid grid-cols-4 mx-aut pt-10 '>
+              <h2 className='text-2xl  text-center pt-8 font-light opacity-70'>Stack tecnológico</h2>
+              <div className='grid grid-cols-4 mx-aut pt-10 text-base'>
                 <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={jsIcon} alt="javascript" width={70} height={70} className='text-center' />
-                  <p className='mt-2 font-bold text-xl '>JavaScript</p>
+                  <Image  src={jsIcon} alt="javascript" width={40} height={40} className='text-center' />
+                  <p className='mt-2 font-bold '>JavaScript</p>
                 </div>
                 <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={tsIcon} alt="typescript" width={70} height={70} />
-                  <p className='mt-2 font-bold text-xl'>TypeScript</p>
+                  <Image  src={tsIcon} alt="typescript" width={40} height={40} />
+                  <p className='mt-2 font-bold'>TypeScript</p>
                 </div>
                 <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                <Image  src={reactIcon} alt="react" width={70} height={70} />
-                  <p className='mt-2 font-bold text-xl'>React JS</p>
+                <Image  src={reactIcon} alt="react" width={40} height={40} />
+                  <p className='mt-2 font-bold'>React JS</p>
                 </div>
                 <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                <Image  src={nodeIcon} alt="nodejs" width={70} height={70} />
-                  <p className='mt-2 font-bold text-xl'>Node JS</p>
+                <Image  src={nodeIcon} alt="nodejs" width={40} height={40} />
+                  <p className='mt-2 font-bold'>Node JS</p>
                 </div>
                 <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={nextIcon} alt="nextjs" width={70} height={70}/>
-                  <p className='mt-2 font-bold text-xl'>Next JS</p>
+                  <Image  src={nextIcon} alt="nextjs" width={40} height={40}/>
+                  <p className='mt-2 font-bold'>Next JS</p>
                 </div>
                 <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={tailwindIcon} alt="tailwind" width={70} height={70}/>
-                  <p className='mt-2 font-bold text-xl'>Tailwind</p>
+                  <Image  src={tailwindIcon} alt="tailwind" width={40} height={40}/>
+                  <p className='mt-2 font-bold '>Tailwind</p>
                 </div>
                 <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={htmlIcon} alt="html" width={70} height={70} />
+                  <Image  src={htmlIcon} alt="html" width={40} height={40} />
                   <p className='mt-2 font-bold text-xl'>HTML</p>
                 </div>
                 <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={cssIcon} alt="css" width={70} height={70} />
-                  <p className='mt-2 font-bold text-xl'>CSS</p>
+                  <Image  src={cssIcon} alt="css" width={40} height={40} />
+                  <p className='mt-2 font-bold'>CSS</p>
                 </div>
                 <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={expressIcon} alt="express" width={70} height={70}  />
-                  <p className='mt-2 font-bold text-xl'>Express</p>
+                  <Image  src={expressIcon} alt="express" width={40} height={40}  />
+                  <p className='mt-2 font-bold'>Express</p>
                 </div>
                 <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={sequelizeIcon} alt="signature" width={70} height={70} />
-                  <p className='mt-2 font-bold text-xl'>Sequelize</p>
+                  <Image  src={sequelizeIcon} alt="signature" width={40} height={40} />
+                  <p className='mt-2 font-bold'>Sequelize</p>
                 </div>
                 <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={posgresqlIcon} alt="postgresql" width={70} height={70} />
-                  <p className='mt-1 font-bold text-xl'>PostgreSQL</p>
+                  <Image  src={posgresqlIcon} alt="postgresql" width={40} height={40} />
+                  <p className='mt-1 font-bold'>PostgreSQL</p>
                 </div>
                 <div className='p-3 grid justify-items-center opacity-40 hover:opacity-100'>
-                  <Image  src={mongoIcon} alt="mongoDB" width={70} height={70}/>
-                  <p className='mt-2 font-bold text-xl'>Mongo DB</p>
+                  <Image  src={mongoIcon} alt="mongoDB" width={40} height={40}/>
+                  <p className='mt-2 font-bold '>Mongo DB</p>
                 </div>
                 
               </div>

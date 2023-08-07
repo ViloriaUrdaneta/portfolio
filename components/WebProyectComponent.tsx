@@ -10,8 +10,8 @@ type WebProps = {
 const WebProyectComponent:React.FC<WebProps> = ({ web }) => {
   return (
     <div className='bg-gray-800 py-16'>
-      <h2 className='text-5xl font-semibold text-center'>{web.title}</h2>
-      <div className='flex justify-between pt-16 text-lg '>
+      <h2 className='text-xl font-semibold text-center'>{web.title}</h2>
+      <div className='flex justify-between pt-16 text-base '>
         <div >
           <p className='font-sans mr-10'>{web.description}</p>
           <p className='font-bold pt-5'>Tecnologías usadas: </p>
@@ -29,7 +29,7 @@ const WebProyectComponent:React.FC<WebProps> = ({ web }) => {
             </p>
           )}
         </div>
-        <Image src={web.picture} alt={web.title} width={800} height={800} className='shadow-lg rounded-lg '/>
+        <Image src={web.picture} alt={web.title} width={400} height={400} className='shadow-lg rounded-lg '/>
       </div>
     </div>
   )

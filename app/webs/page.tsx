@@ -9,14 +9,14 @@ function Webs() {
 
   return (
     <div className='flex min-h-screen flex-col items-center p-4 bg-gray-800 text-white h-full font-mono'>
-        <h1 className='text-5xl py-16'>Proyectos de desarrollo</h1>
+        <h1 className='text-2xl py-16'>Proyectos de desarrollo</h1>
       <div className='container'>
         {webData.map((web )=> (
           <WebProyectComponent key={web.id} web={web}/>
         ))}
       </div>
       <Link href={'/'}>
-        <p className='text-5xl py-16 hover:text-sky-500'>
+        <p className='text-3xl py-16 hover:text-sky-500'>
           {arrow}
         </p>
       </Link>
