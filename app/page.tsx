@@ -5,6 +5,7 @@ import copyIcon from '../public/copy.png'
 import Image from 'next/image'
 import profile from '../public/profilepic.png'
 import githubIcon from '../public/GitHub-logo.png'
+import whitesignature from '../public/whitesignature.png'
 
 
 export default function Home() {
@@ -43,11 +44,13 @@ export default function Home() {
             </div>
             <div className="h-3/4 border-black hover:bg-black hover:text-slate-100">
               <h2 className='text-2xl border-black ml-10 pt-5 font-semibold'>Desarrollador web</h2>
-              <p className='text-base mx-10 font-sans pt-2 first-line:pl-indent border-black'>
+              <p className='text-base mx-10 font-sans pt-2 first-line:pl-indent border-black indent-2'>
                 Me gusta entender como se guarda, estructura y maneja la información y me gusta proponer diseños estéticos innovadores para mostrarla.
-                <br/>Creo en los beneficios del aprendizaje continuo y en la necesidad de usar las herramientas tecnológias para mejorar nuestras vidas.
               </p>
-              <p className='text-base mx-10 font-sans pt-2 text-white'>También soy editor de video y me gusta pintar.</p>
+              <p className='text-base mx-10 font-sans first-line:pl-indent border-black indent-2'>
+                Creo en los beneficios del aprendizaje continuo y en la necesidad de usar las herramientas tecnológias para mejorar nuestras vidas.
+              </p>
+              <p className='text-base mx-10 font-sans text-white indent-2'>También soy editor de video y me gusta pintar.</p>
             </div>
           </div>
           <div className="h-2/4 border-black">
@@ -72,7 +75,7 @@ export default function Home() {
             <Link href={'/paints'}>
               <div className="h-1/4 border-black flex items-center justify-between hover:bg-black hover:text-slate-100">
                 <h2 className='text-xl ml-10 border-black font-semibold'>Pinturas</h2>
-                <h2 className='text-3xl text-white mr-16 font-semibold'>{arrow}</h2>
+                <h2 className='text-3xl text-white mr-16 '>{arrow}</h2>
               </div>
             </Link>
           </div>
@@ -85,8 +88,8 @@ export default function Home() {
               <p className='font-extrabold text-lg text-black'>{copied ? 'Copied!' : 'Copy'}</p>
             </button>
           </div>
-          <div className=" h-7/8 border-black bg-gradient-to-br from-cyan-400  to-black">
-         
+          <div className="flex items-center justify-center h-7/8 border-black bg-gradient-to-br from-cyan-400  to-black">
+          <Image  src={whitesignature} alt="profile" width={700} height={120} className=' flex flex-nowrap me-8 opacity-10' />
           </div>
         </div>
         
