@@ -17,8 +17,8 @@ const ArticleComponent:React.FC<ArticleProps> = ({ article }) => {
 
   return (
     <div className='py-16 bg-gray-200 '>
-      <h2 className='text-xl font-semibold text-center'>{article.title}</h2>
-      <div className='flex pt-16 text-base font-sans leading-relaxed text-justify indent-4'>
+      <h2 className='text-xl font-semibold text-center border-black' >{article.title}</h2>
+      <div className='flex pt-16 text-base border-black font-sans leading-relaxed text-justify indent-4'>
         <div >
             <div>{paragraphs}</div>
         </div>

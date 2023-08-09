@@ -9,7 +9,7 @@ function Articles() {
 
   return (
     <div className='flex min-h-screen flex-col items-center p-4 bg-gray-200  h-full font-mono'>
-      <h1 className='text-2xl py-10'>Bienvenido a mi Blog</h1>
+      <h1 className='text-2xl py-10 border-black'>Bienvenido a mi Blog</h1>
       <div className='container  max-w-4xl'>
         {articleData.map((article )=> (
           <ArticleComponent key={article.id} article={article}/>
